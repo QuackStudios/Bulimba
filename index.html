@@ -790,11 +790,17 @@
       </header>
       <section class="home-three-hero-section bg-image hero-video-shrink" style="z-index: 1">
         <div style="width: 100%; height: 100%;">
-          <video style="width: 100%; height: 100%; object-fit: cover;" autoplay muted loop playsinline id="hero-video">
-            <source src="assets/images/BulimbaHero.mp4" type="video/mp4">
-            Your Browser does not support the video tag
-          </video>
-        </div>
+          <style>
+            iframe {
+               pointer-events: none; /* Disable interaction with the iframe */
+             }
+           
+             iframe:hover {
+               pointer-events: auto; /* Re-enable interaction when hovering */
+             }
+           </style>
+            <iframe src="https://archive.org/download/bulimba-hero/BulimbaHero.mp4" width="100%" height="100%" frameborder="0"  allow="autoplay"></iframe>
+          </div>
         <div class="w-layout-hflex hero-scroll-block">
           <a href="#agency" class="scroll-block w-inline-block"
             ><div class="scroll-v-line"></div>

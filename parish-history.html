@@ -1,601 +1,1117 @@
-<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Nov 25 2024 05:17:37 GMT+0000 (Coordinated Universal Time) --><html
-  data-wf-domain="klevo.webflow.io" data-wf-page="66d18b64b86d9a286b789d27"
-  data-wf-site="668cb1bb08d71a7f19d43089" lang="en" data-wf-locale="en"
-  class=" w-mod-js"><head><meta charset="utf-8"><title>Klevo - Webflow Ecommerce
-      website template</title><meta
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Nov 25 2024 05:17:37 GMT+0000 (Coordinated Universal Time) -->
+<html
+  data-wf-domain="klevo.webflow.io"
+  data-wf-page="66d18b64b86d9a286b789d27"
+  data-wf-site="668cb1bb08d71a7f19d43089"
+  lang="en"
+  data-wf-locale="en"
+  class="w-mod-js"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Klevo - Webflow Ecommerce website template</title>
+    <meta
       content="Explore Klevo's portfolio page, a creative agency Webflow template designed to showcase stunning projects with modern layouts and responsive design."
-      name="description"><meta
+      name="description"
+    />
+    <meta
       content="Klevo - Webflow Ecommerce website template"
-      property="og:title"><meta
+      property="og:title"
+    />
+    <meta
       content="Explore Klevo's portfolio page, a creative agency Webflow template designed to showcase stunning projects with modern layouts and responsive design."
-      property="og:description"><meta
+      property="og:description"
+    />
+    <meta
       content="Klevo - Webflow Ecommerce website template"
-      property="twitter:title"><meta
+      property="twitter:title"
+    />
+    <meta
       content="Explore Klevo's portfolio page, a creative agency Webflow template designed to showcase stunning projects with modern layouts and responsive design."
-      property="twitter:description"><meta property="og:type"
-      content="website"><meta content="summary_large_image"
-      name="twitter:card"><meta content="width=device-width, initial-scale=1"
-      name="viewport"><meta content="Webflow" name="generator"><link
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link
       href="assets-6/css/klevo.webflow.f9e509445.css"
-      rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com"
-      rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect"
-      crossorigin="anonymous"><script
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <script
       src="ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-      type="text/javascript"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.6/bundled/lenis.min.js"></script>
-      <script src="scripts2/js/lenis-scroll.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      <script defer src="scripts2/js/history.js"></script>
-      <script
-      type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Fraunces:100,200,300,regular,500","Plus Jakarta Sans:regular,500,600","DM Sans:regular,500","Manrope:300,regular,500,600"]  }});</script><script
-      type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link
+      type="text/javascript"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.6/bundled/lenis.min.js"></script>
+    <script src="scripts2/js/lenis-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="scripts2/js/history.js"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: [
+            "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
+            "Fraunces:100,200,300,regular,500",
+            "Plus Jakarta Sans:regular,500,600",
+            "DM Sans:regular,500",
+            "Manrope:300,regular,500,600",
+          ],
+        },
+      });
+    </script>
+    <script type="text/javascript">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        (n.className += t + "js"),
+          ("ontouchstart" in o ||
+            (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + "touch");
+      })(window, document);
+    </script>
+    <link
       href="assets-6/67440867e2d93d7071599b72_klevo-fav-small.png"
-      rel="shortcut icon" type="image/x-icon"><link
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
       href="assets-6/674408618f892961a45e282d_klevo-fav-large.png"
-      rel="apple-touch-icon"><script
-      type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script></head><body><header
-      class="header-one"><div class="header-main"><div class="header-logo"><a
-            href="/" class="w-inline-block"><img width="106" height="23"
+      rel="apple-touch-icon"
+    />
+    <script type="text/javascript">
+      window.__WEBFLOW_CURRENCY_SETTINGS = {
+        currencyCode: "USD",
+        symbol: "$",
+        decimal: ".",
+        fractionDigits: 2,
+        group: ",",
+        template:
+          '{{wf {"path":"symbol","type":"PlainText"} }} {{wf {"path":"amount","type":"CommercePrice"} }} {{wf {"path":"currencyCode","type":"PlainText"} }}',
+        hideDecimalForWholeNumbers: false,
+      };
+    </script>
+  </head>
+  <body>
+    <header class="header-one">
+      <div class="header-main">
+        <div class="header-logo">
+          <a href="/" class="w-inline-block"
+            ><img
+              width="106"
+              height="23"
               alt="Logo white"
               src="assets-6/673eddbb26116e476e6527c1_logo-white.svg"
-              loading="lazy"></a></div><div class="header-button"><div
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="header-button">
+          <div
             data-w-id="9250bc14-0c27-d066-3769-140dc88f1bbd"
-            class="hamburger"><div class="hamburger-bar-one"></div><div
-              class="hamburger-bar-two"></div><div
-              class="hamburger-bar-three"></div></div></div></div><div
-        class="megamenu"><div class="megamenu-main"><div
-            class="megamenu-bg-main"><div
+            class="hamburger"
+          >
+            <div class="hamburger-bar-one"></div>
+            <div class="hamburger-bar-two"></div>
+            <div class="hamburger-bar-three"></div>
+          </div>
+        </div>
+      </div>
+      <div class="megamenu">
+        <div class="megamenu-main">
+          <div class="megamenu-bg-main">
+            <div
               id="w-node-_9250bc14-0c27-d066-3769-140dc88f1bc4-c88f1b84"
-              class="megamenu-bg-left"></div><div
+              class="megamenu-bg-left"
+            ></div>
+            <div
               id="w-node-_9250bc14-0c27-d066-3769-140dc88f1bc5-c88f1b84"
-              class="megamenu-bg-right"></div></div><div
-            class="megamenu-text"><div class="megamenu-text-main"><div
-                class="megamenu-nav"><div data-delay="1000" data-hover="false"
+              class="megamenu-bg-right"
+            ></div>
+          </div>
+          <div class="megamenu-text">
+            <div class="megamenu-text-main">
+              <div class="megamenu-nav">
+                <div
+                  data-delay="1000"
+                  data-hover="false"
                   data-w-id="9250bc14-0c27-d066-3769-140dc88f1bc9"
-                  class="dropdown-three w-dropdown"><div
-                    class="dropdown-toggle-three w-dropdown-toggle"><div
-                      class="heading-two-fraunces white-text nav-links">Home</div><img
-                      width="25" height="25" alt="Plus-icon"
-                      src="assets-6/670382a5c60ffa8caf4bccba_Plus.svg"
-                      class="plus"></div><nav
-                    class="dropdown-list-three w-dropdown-list"><a
-                      href="/home-one"
-                      class="heading-five-fraunces text-white w-dropdown-link">Home
-                      One</a><a href="/home-two"
-                      class="heading-five-fraunces text-white w-dropdown-link">Home
-                      Two</a><a href="/home-three"
-                      class="heading-five-fraunces text-white w-dropdown-link">Home
-                      Three</a></nav></div><div data-delay="1000"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/">Home</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-delay="1000"
                   data-hover="false"
                   data-w-id="9250bc14-0c27-d066-3769-140dc88f1bd5"
-                  class="dropdown-three w-dropdown"><div
-                    class="dropdown-toggle-three w-dropdown-toggle"><div
-                      class="heading-two-fraunces white-text nav-links">pages</div><img
-                      width="25" height="25" alt="Plus-icon"
-                      src="assets-6/670382a5c60ffa8caf4bccba_Plus.svg"
-                      class="plus"></div><nav
-                    class="dropdown-list-three w-dropdown-list"><div
-                      class="w-layout-grid nav-dropdown-grid"><div
-                        class="nav-grid-one"><a href="/about-one"
-                          class="heading-five-fraunces text-white w-dropdown-link">About
-                          one</a><a href="#"
-                          class="heading-five-fraunces text-white w-dropdown-link">About
-                          two</a><a href="/about-three"
-                          class="heading-five-fraunces text-white w-dropdown-link">About
-                          three</a><a href="/portfolio-one" aria-current="page"
-                          class="heading-five-fraunces text-white w-dropdown-link w--current">Portfolio
-                          One</a><a href="/portfolio-two"
-                          class="heading-five-fraunces text-white w-dropdown-link">Portfolio
-                          Two</a></div><div class="nav-grid-one"><a href="/shop"
-                          class="heading-five-fraunces text-white w-dropdown-link">Shop</a><a
-                          href="/team"
-                          class="heading-five-fraunces text-white w-dropdown-link">Team</a><a
-                          href="/pricing"
-                          class="heading-five-fraunces text-white w-dropdown-link">Pricing</a><a
-                          href="https://klevo.webflow.io/401"
-                          class="heading-five-fraunces text-white w-dropdown-link">Password
-                          Protected</a><a href="https://klevo.webflow.io/404"
-                          class="heading-five-fraunces text-white w-dropdown-link">404
-                          Not Found</a></div></div></nav></div><div
-                  data-delay="1000" data-hover="false"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      Sacraments
+                    </div>
+                    <img
+                      width="25"
+                      height="25"
+                      alt="Plus-icon"
+                      src="assets/img-assets/6784620f86aefed9338a87b9_Plus.svg"
+                      class="plus"
+                    />
+                  </div>
+                  <nav class="dropdown-list-three w-dropdown-list">
+                    <div class="w-layout-grid nav-dropdown-grid">
+                      <div class="nav-grid-one">
+                        <a
+                          href="/Infant-Baptism.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Infant Baptism</a
+                        ><a
+                          href="confirmation.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Confirmation</a
+                        ><a
+                          href="/first-communion.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >First Communion</a
+                        ><a
+                          href="/reconciliation.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Reconciliation</a
+                        ><a
+                          href="/initiation-of-adults.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Initiation of Adults</a
+                        >
+                      </div>
+                      <div class="nav-grid-one">
+                        <a
+                          href="/matrimony.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Matrimony</a
+                        ><a
+                          href="/annointing-of-the-sick.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Annointing of the Sick</a
+                        ><a
+                          href="/last-rites.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Last Rites</a
+                        ><a
+                          href="funerals.html"
+                          class="heading-five-fraunces text-white w-dropdown-link"
+                          >Funerals</a
+                        >
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  data-delay="1000"
+                  data-hover="false"
                   data-w-id="9250bc14-0c27-d066-3769-140dc88f1bf2"
-                  class="dropdown-three w-dropdown"><div
-                    class="dropdown-toggle-three w-dropdown-toggle"><div
-                      class="heading-two-fraunces white-text nav-links">Service</div><img
-                      width="25" height="25" alt="Plus-icon"
-                      src="assets-6/670382a5c60ffa8caf4bccba_Plus.svg"
-                      class="plus"></div><nav
-                    class="dropdown-list-three w-dropdown-list"><a
-                      href="/service-one"
-                      class="heading-five-fraunces text-white w-dropdown-link">Service
-                      one</a><a href="/service-two"
-                      class="heading-five-fraunces text-white w-dropdown-link">Service
-                      two</a><a href="/service-three"
-                      class="heading-five-fraunces text-white w-dropdown-link">Service
-                      three</a></nav></div><div data-delay="1000"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/parish-history.html">Parish History</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-delay="1000"
                   data-hover="false"
                   data-w-id="9250bc14-0c27-d066-3769-140dc88f1bfe"
-                  class="dropdown-three w-dropdown"><div
-                    class="dropdown-toggle-three w-dropdown-toggle"><div
-                      class="heading-two-fraunces white-text nav-links">Blog</div><img
-                      width="25" height="25" alt="Plus-icon"
-                      src="assets-6/670382a5c60ffa8caf4bccba_Plus.svg"
-                      class="plus"></div><nav
-                    class="dropdown-list-three w-dropdown-list"><a
-                      href="/blog-one"
-                      class="heading-five-fraunces text-white w-dropdown-link">Blog
-                      one</a><a href="/blog-two"
-                      class="heading-five-fraunces text-white w-dropdown-link">Blog
-                      two</a><a href="/blog-three"
-                      class="heading-five-fraunces text-white w-dropdown-link">Blog
-                      three</a></nav></div><div data-delay="1000"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/ministries.html">Ministries</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-delay="1000"
                   data-hover="false"
                   data-w-id="9250bc14-0c27-d066-3769-140dc88f1c0a"
-                  class="dropdown-three w-dropdown"><div
-                    class="dropdown-toggle-three w-dropdown-toggle"><div
-                      class="heading-two-fraunces white-text nav-links">Contact</div><img
-                      width="25" height="25" alt="Plus-icon"
-                      src="assets-6/670382a5c60ffa8caf4bccba_Plus.svg"
-                      class="plus"></div><nav
-                    class="dropdown-list-three w-dropdown-list"><a
-                      href="/contact-one"
-                      class="heading-five-fraunces text-white w-dropdown-link">Contact
-                      one</a><a href="/contact-two"
-                      class="heading-five-fraunces text-white w-dropdown-link">Contact
-                      two</a><a href="/contact-three"
-                      class="heading-five-fraunces text-white w-dropdown-link">Contact
-                      three</a></nav></div></div><div
-                class="megamenu-contact"><div
-                  class="megamenu-contact-address"><div
-                    class="megamenu-contact-title padding-bottom-twenty"><div
-                      class="heading-five-jakarta white-text">Get in
-                      touch</div></div><div
-                    class="megamenu-contact-address-box"><div
-                      class="megamenu-contact-address-main"><div
-                        class="megamenu-contact-icon"><img width="19"
-                          height="20" alt="phone icon"
-                          src="assets-6/66d8349ef2ff6b552497dc1e_menu-phone-icon.webp"
-                          loading="lazy"></div><div><div
-                          class="body-font color-dust">Phone</div><a
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/calendar-and-events.html">Calendar & News</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-delay="1000"
+                  data-hover="false"
+                  data-w-id="9250bc14-0c27-d066-3769-140dc88f1bfe"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/mass-confession-times.html">Mass Times</a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-delay="1000"
+                  data-hover="false"
+                  data-w-id="9250bc14-0c27-d066-3769-140dc88f1c0a"
+                  class="dropdown-three w-dropdown"
+                >
+                  <div class="dropdown-toggle-three w-dropdown-toggle">
+                    <div class="heading-two-fraunces white-text nav-links">
+                      <a href="/contact.html">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="megamenu-contact">
+                <div class="megamenu-contact-address">
+                  <div class="megamenu-contact-title padding-bottom-twenty">
+                    <div class="heading-five-jakarta white-text">
+                      Get in touch
+                    </div>
+                  </div>
+                  <div class="megamenu-contact-address-box">
+                    <div class="megamenu-contact-address-main">
+                      <div class="megamenu-contact-icon">
+                        <img
+                          width="19"
+                          height="20"
+                          alt="phone icon"
+                          src="assets/img-assets/6784620f86aefed9338a86bf_menu-phone-icon.webp"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div>
+                        <div class="body-font color-dust">Phone</div>
+                        <a
                           href="tel:8884567890"
-                          class="body-font underline-off">(888) 456
-                          7890</a></div></div><div
-                      class="megamenu-contact-address-main"><div
-                        class="megamenu-contact-icon"><img width="23"
-                          height="18" alt="mail"
-                          src="assets-6/66d58174c02a5b9df8839aed_mail-icon.svg"
-                          loading="lazy"></div><div><div
-                          class="body-font color-dust">Email now</div><a
-                          href="mailto:info@example.com"
-                          class="body-font underline-off">info@example.com</a></div></div><div
-                      class="megamenu-contact-address-main"><div
-                        class="megamenu-contact-icon"><img width="21"
-                          height="25" alt="map"
-                          src="assets-6/66d5816dde75487a3aca69a2_map-icon.svg"
-                          loading="lazy"></div><div><div
-                          class="body-font color-dust">Office address</div><div
-                          class="div-block-471"><div class="body-font">410
-                            Sandtown, California 94001,
-                            USA</div></div></div></div></div></div><div
-                  class="megamenu-social"><div
-                    class="megamenu-contact-title padding-bottom-twenty"><div
-                      class="heading-five-jakarta white-text">Social
-                      link</div></div><div class="megamenu-social-main"><a
-                      href="https://www.dribble.com/"
-                      class="megamenu-social-block underline-off w-inline-block"><div
-                        class="megamenu-social-image"><img width="18"
-                          height="17" alt
-                          src="../../cdn.prod.website-files.com/65dc5db578889e0f50021726/660f8fdb71f60a609c9d0ec9_dribbble.svg"
-                          loading="lazy"></div><div
-                        class="smallest-text change-uppercase">Dribble</div></a><a
-                      href="https://www.pinterest.com/"
-                      class="megamenu-social-block underline-off w-inline-block"><div
-                        class="megamenu-social-image"><img width="18"
-                          height="17" alt
-                          src="../../cdn.prod.website-files.com/65dc5db578889e0f50021726/660f8fdc5946f20ec8d2939c_pinterest.svg"
-                          loading="lazy"></div><div
-                        class="smallest-text change-uppercase">Pinterest</div></a><a
-                      href="https://www.linkdln.com/"
-                      class="megamenu-social-block underline-off w-inline-block"><div
-                        class="megamenu-social-image"><img width="16"
-                          height="16" alt
-                          src="../../cdn.prod.website-files.com/65dc5db578889e0f50021726/660f8fdb2dc9dd278a609a18_linkedin%20%281%29.svg"
-                          loading="lazy"></div><div
-                        class="smallest-text change-uppercase">Linkedin</div></a><a
-                      href="https://www.facebook.com/"
-                      class="megamenu-social-block underline-off w-inline-block"><div
-                        class="megamenu-social-image"><img width="15"
-                          height="16" alt
-                          src="../../cdn.prod.website-files.com/65dc5db578889e0f50021726/660f8fdbb8c7608ccfebb80c_facebook%20%281%29.svg"
-                          loading="lazy"></div><div
-                        class="smallest-text change-uppercase">Facebook</div></a></div></div></div></div></div></div></div><div
-        class="nav-sticky-bg"></div></header><section
-      class="service-three-hero-section"><section
-        class="home-one-hero-section hero-bg"><div
-          class="w-layout-blockcontainer hero-block-content portfolio-hero-block w-container"><div
-            class="w-layout-vflex service-three-hero-text-block"><div
-              class="small-heading">Our Portfolio</div><div
-              class="w-layout-hflex heading-insert-icon"><img width="102"
-                height="103" alt="Flower Vector"
+                          class="body-font underline-off"
+                          >(07) 3399 2386</a
+                        >
+                      </div>
+                    </div>
+                    <div class="megamenu-contact-address-main">
+                      <div class="megamenu-contact-icon">
+                        <img
+                          width="23"
+                          height="18"
+                          alt="mail"
+                          src="assets/img-assets/6784620f86aefed9338a86b7_mail-icon.svg"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div>
+                        <div class="body-font color-dust">Email now</div>
+                        <a
+                          href="mailto:bulimba@bne.catholic.net.au"
+                          class="body-font underline-off"
+                          >bulimba@bne.catholic.net.au</a
+                        >
+                      </div>
+                    </div>
+                    <div class="megamenu-contact-address-main">
+                      <div class="megamenu-contact-icon">
+                        <img
+                          width="21"
+                          height="25"
+                          alt="map"
+                          src="assets/img-assets/6784620f86aefed9338a86b6_map-icon.svg"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div>
+                        <div class="body-font color-dust">Office address</div>
+                        <div class="div-block-471">
+                          <div class="body-font">
+                            25 Main Avenue, Bulimba QLD 4171
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="megamenu-social">
+                  <div class="megamenu-contact-title padding-bottom-twenty">
+                    <div class="heading-five-jakarta white-text">
+                      Social link
+                    </div>
+                  </div>
+                  <div class="megamenu-social-main">
+                    <a
+                      href="https://www.instagram.com/bulimba_catholic_parish/"
+                      class="megamenu-social-block underline-off w-inline-block"
+                      ><div class="megamenu-social-image">
+                        <img
+                          width="16"
+                          height="16"
+                          alt=""
+                          src="assets/images/instagram.svg"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="smallest-text change-uppercase">
+                        Instagram
+                      </div></a
+                    ><a
+                      href="https://www.facebook.com/bulimbacatholic/"
+                      target="_blank"
+                      class="megamenu-social-block underline-off w-inline-block"
+                      ><div class="megamenu-social-image">
+                        <img
+                          width="15"
+                          height="16"
+                          alt=""
+                          src="assets/images/660f8fdbb8c7608ccfebb80c_facebook%20%281%29.svg"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="smallest-text change-uppercase">
+                        Facebook
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-sticky-bg"></div>
+    </header>
+    <section class="service-three-hero-section">
+      <section class="home-one-hero-section hero-bg">
+        <div
+          class="w-layout-blockcontainer hero-block-content portfolio-hero-block w-container"
+        >
+          <div class="w-layout-vflex service-three-hero-text-block">
+            <div class="small-heading">Our Portfolio</div>
+            <div class="w-layout-hflex heading-insert-icon">
+              <img
+                width="102"
+                height="103"
+                alt="Flower Vector"
                 src="assets-6/66ac8970f3f717ffeef4f8fb_Flower-vector-22.svg"
                 loading="lazy"
-                class="tab-image-height-auto fit-cover text-inside-flower rotate-image home-three-flower-text-inside"><div
-                class="heading-one-fraunces heading-left-margin service-one-hero-text-margin portfolio-title-main white-text">Our</div></div><div
-              class="w-layout-hflex service-three-feather-icon-text"><img
-                width="150" height="175" alt="Home one Feather Icon"
+                class="tab-image-height-auto fit-cover text-inside-flower rotate-image home-three-flower-text-inside"
+              />
+              <div
+                class="heading-one-fraunces heading-left-margin service-one-hero-text-margin portfolio-title-main white-text"
+              >
+                Our
+              </div>
+            </div>
+            <div class="w-layout-hflex service-three-feather-icon-text">
+              <img
+                width="150"
+                height="175"
+                alt="Home one Feather Icon"
                 src="assets-6/66a8d65481a565d55238d306_feather-icon.webp"
                 data-w-id="3f2cdb1b-56fd-cdbe-dc9f-f4480a3c34e4"
-                class="tab-image-height-auto fit-cover feather-image service-three-feather"><div
-                class="heading-one-jakarta white-text heading-orange-underline">History</div></div></div></div><div
-          class="w-layout-hflex hero-scroll-block"><div
-            class="w-layout-hflex scroll-block"><div
-              class="scroll-v-line"></div><div
-              class="scroll-link">Scroll</div></div></div></section></section><section
+                class="tab-image-height-auto fit-cover feather-image service-three-feather"
+              />
+              <div
+                class="heading-one-jakarta white-text heading-orange-underline"
+              >
+                History
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-layout-hflex hero-scroll-block">
+          <div class="w-layout-hflex scroll-block">
+            <div class="scroll-v-line"></div>
+            <div class="scroll-link">Scroll</div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section
       data-w-id="c8e23186-aad6-c6c3-0d7a-04407b5b714e"
-      class="portfolio-items-section"><div class="portfolio-item-div"><div
-          class="portfolio-text-div"><div
-            class="portfolio-text-main">history</div></div><div
-          class="w-layout-vflex portfolio-item-wrap"><div
-            class="w-layout-hflex portfolio-item-flex trigger1">
-            <div class="history-text1 fade-in1" style="width: 35%; height: 30vh; position: relative; left: -2%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
+      class="portfolio-items-section"
+    >
+      <div class="portfolio-item-div">
+        <div class="portfolio-text-div">
+          <div class="portfolio-text-main">history</div>
+        </div>
+        <div class="w-layout-vflex portfolio-item-wrap">
+          <div class="w-layout-hflex portfolio-item-flex trigger1">
+            <div
+              class="history-text1 fade-in1"
+              style="width: 35%; height: 30vh; position: relative; left: -2%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
               </div>
               <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
               </div>
             </div>
-            <div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/packaging-design"
-                      class="portfolio-items port-one w-inline-block"><div
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/packaging-design"
+                      class="portfolio-items port-one w-inline-block"
+                      ><div
                         data-w-id="02498c28-cbb5-210b-250d-375968db101c"
-                        style="background-image:url('http://127.0.0.1:5500/assets-6/670372d0a642e394ba4adfce_portfolio-one-01.webp');
-                        width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Packaging
-                          Design</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Expertly
-                          capturing the essence and energy of memorable
-                          occasions through skilled
-                          photography.</div></div></a></div></div></div></div></div><div
-            class="w-layout-hflex portfolio-item-flex left-align trigger2"><div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/creative-photography"
-                      class="portfolio-items port-two w-inline-block"><div
+                        style="
+                          background-image: url('http://127.0.0.1:5500/assets-6/670372d0a642e394ba4adfce_portfolio-one-01.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        =""
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Packaging Design
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Expertly capturing the essence and energy of memorable
+                          occasions through skilled photography.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex left-align trigger2">
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/creative-photography"
+                      class="portfolio-items port-two w-inline-block"
+                      ><div
                         data-w-id="c6cc0b09-0f9a-f415-3918-6df4ff01519c"
-                        style="background-image:url('https:
-                        cdn.prod.website-files.com 66d182cef23126623c1c94fe
-                        67037070ba55207b0529abbe_portfolio-one-06.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Creative
-                          Photography</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Capturing
-                          the unique essence of individuals through personalized
-                          photography
-                          sessions.</div></div></a></div></div></div></div>
-           <div class="history-text1 fade-in2" style="width: 35%; height: 30vh; position: relative; left: 4%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </div>
-            </div>
-           
-                          </div><div
-            class="w-layout-hflex portfolio-item-flex trigger3">
-            <div class="history-text1 fade-in3" style="width: 35%; height: 30vh; position: relative; left: -2%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67037070ba55207b0529abbe_portfolio-one-06.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Creative Photography
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Capturing the unique essence of individuals through
+                          personalized photography sessions.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            
-            
-            
-            
-            
             <div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/artistic-tactics"
-                      class="portfolio-items port-three w-inline-block"><div
-                        data-w-id="dbba188a-c8af-7fe9-0847-b034c6c54d5c"
-                        style="background-image:url('https:cdn.prod.website-files.com/66d182cef23126623c1c94fe
-                        6704bf566ff76b3cdd5bf82e_portfolio-one-004.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Artistic
-                          Tactics</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Revealing
-                          the breathtaking wonders of the natural world through
-                          the art of
-                          photography.</div></div></a></div></div></div></div></div><div
-            class="w-layout-hflex portfolio-item-flex left-align trigger4"><div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a
-                      href="/portfolio/e-commerce-integration"
-                      class="portfolio-items port-four w-inline-block"><div
-                        data-w-id="4086d3a1-2b18-e670-149a-62cbd9120498"
-                        style="background-image:url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67037080125260b47d16fbe5_portfolio-one-05.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">E-Commerce
-                          Integration</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Immersing
-                          in the untamed beauty of nature, capturing wildlife's
-                          raw essence through the
-                          lens.</div></div></a></div></div></div></div>
-                          
-             <div class="history-text1 fade-in4" style="width: 35%; height: 30vh; position: relative; left: 4%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
+              class="history-text1 fade-in2"
+              style="width: 35%; height: 30vh; position: relative; left: 4%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
               </div>
               <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex trigger3">
+            <div
+              class="history-text1 fade-in3"
+              style="width: 35%; height: 30vh; position: relative; left: -2%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
               </div>
             </div>
 
-                          
-                          </div><div
-            class="w-layout-hflex portfolio-item-flex trigger5">
-           <div class="history-text1 fade-in5" style="width: 35%; height: 30vh; position: relative; left: -2%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </div>
-            </div>
-            
-            
-            <div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/branding-solutions"
-                      class="portfolio-items port-five w-inline-block"><div
-                        data-w-id="d3bf4a85-c499-341a-0264-e1b7c356bd4e"
-                        style="background-image:url('https:
-                        cdn.prod.website-files.com 66d182cef23126623c1c94fe
-                        6703709952dc4296b54cd465_portfolio-one-03.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Branding
-                          Solutions</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Freezing
-                          moments in time, illuminating perspectives, and
-                          telling stories through the
-                          lens.</div></div></a></div></div></div></div></div><div
-            class="w-layout-hflex portfolio-item-flex left-align trigger6"><div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/website-designing"
-                      class="portfolio-items port-six w-inline-block"><div
-                        data-w-id="8b46c8c8-27e6-b8ff-2753-862e2034b15c"
-                        style="background-image:url('https:
-                        cdn.prod.website-files.com 66d182cef23126623c1c94fe
-                        67285b907c6bc502a20304f5_portfolio-last-002.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Website
-                          Designing</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Preserving
-                          the magic and memories of weddings through captivating
-                          photography.</div></div></a></div></div></div></div>
-                          
-            <div class="history-text1 fade-in6" style="width: 35%; height: 30vh; position: relative; left: 4%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </div>
-            </div>
-                          
-                          
-                          </div>
-            <div
-            class="w-layout-hflex portfolio-item-flex trigger7">
-            <div class="history-text1 fade-in7" style="width: 35%; height: 30vh; position: relative; left: -2%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </div>
-            </div>
-            
-            
-            
-            
-            
-            <div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/artistic-tactics"
-                      class="portfolio-items port-three w-inline-block"><div
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/artistic-tactics"
+                      class="portfolio-items port-three w-inline-block"
+                      ><div
                         data-w-id="dbba188a-c8af-7fe9-0847-b034c6c54d5c"
-                        style="background-image:url('https:cdn.prod.website-files.com/66d182cef23126623c1c94fe
-                        6704bf566ff76b3cdd5bf82e_portfolio-one-004.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Artistic
-                          Tactics</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Revealing
-                          the breathtaking wonders of the natural world through
-                          the art of
-                          photography.</div></div></a></div></div></div></div></div><div
-            class="w-layout-hflex portfolio-item-flex left-align trigger8"><div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a
-                      href="/portfolio/e-commerce-integration"
-                      class="portfolio-items port-four w-inline-block"><div
-                        data-w-id="4086d3a1-2b18-e670-149a-62cbd9120498"
-                        style="background-image:url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67037080125260b47d16fbe5_portfolio-one-05.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">E-Commerce
-                          Integration</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Immersing
-                          in the untamed beauty of nature, capturing wildlife's
-                          raw essence through the
-                          lens.</div></div></a></div></div></div></div>
-                          
-             <div class="history-text1 fade-in8" style="width: 35%; height: 30vh; position: relative; left: 4%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/6704bf566ff76b3cdd5bf82e_portfolio-one-004.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Artistic Tactics
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Revealing the breathtaking wonders of the natural
+                          world through the art of photography.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
               </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex left-align trigger4">
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/e-commerce-integration"
+                      class="portfolio-items port-four w-inline-block"
+                      ><div
+                        data-w-id="4086d3a1-2b18-e670-149a-62cbd9120498"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67037080125260b47d16fbe5_portfolio-one-05.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          E-Commerce Integration
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Immersing in the untamed beauty of nature, capturing
+                          wildlife's raw essence through the lens.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
 
-                          
-                          </div><div
-            class="w-layout-hflex portfolio-item-flex trigger9">
-           <div class="history-text1 fade-in9" style="width: 35%; height: 30vh; position: relative; left: -2%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
-              </div>
-              <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-              </div>
-            </div>
-            
-            
             <div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/branding-solutions"
-                      class="portfolio-items port-five w-inline-block"><div
-                        data-w-id="d3bf4a85-c499-341a-0264-e1b7c356bd4e"
-                        style="background-image:url('https:
-                        cdn.prod.website-files.com 66d182cef23126623c1c94fe
-                        6703709952dc4296b54cd465_portfolio-one-03.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Branding
-                          Solutions</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Freezing
-                          moments in time, illuminating perspectives, and
-                          telling stories through the
-                          lens.</div></div></a></div></div></div></div></div><div
-            class="w-layout-hflex portfolio-item-flex left-align trigger10"><div
-              class="portfolio-item-block"><div class="w-dyn-list"><div
-                  role="list" class="w-dyn-items"><div role="listitem"
-                    class="w-dyn-item"><a href="/portfolio/website-designing"
-                      class="portfolio-items port-six w-inline-block"><div
-                        data-w-id="8b46c8c8-27e6-b8ff-2753-862e2034b15c"
-                        style="background-image:url('https:
-                        cdn.prod.website-files.com 66d182cef23126623c1c94fe
-                        67285b907c6bc502a20304f5_portfolio-last-002.webp');width:0%;-webkit-transform:translate3d(0,=""
-                        0, 0) scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
-                        rotatez(0) skew(0, 0);-moz-transform:translate3d(0,
-                        0);-ms-transform:translate3d(0,
-                        0);transform:translate3d(0, 0)"=""
-                        class="portfolio-image-box-two"></div><div
-                        class="w-layout-hflex portfolio-content-box"><div
-                          class="heading-five-jakarta dark-text">Website
-                          Designing</div><div
-                          class="small-heading padding-top-twenty padding-bottom-ten">Preserving
-                          the magic and memories of weddings through captivating
-                          photography.</div></div></a></div></div></div></div>
-                          
-            <div class="history-text1 fade-in10" style="width: 35%; height: 30vh; position: relative; left: 4%;">
-              <div class="history-title1" style="width: 100%; height: 20%; font-size: 30px; font-weight: 700;">
-               The Church is Built
+              class="history-text1 fade-in4"
+              style="width: 35%; height: 30vh; position: relative; left: 4%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
               </div>
               <div class="history-paragraph1">
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
-                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
               </div>
             </div>
-                          
-                          
-                          </div>
-                          
-                          
-                          
-                          
-                          
-                          </div></div></section>
-                          
-                      <section
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex trigger5">
+            <div
+              class="history-text1 fade-in5"
+              style="width: 35%; height: 30vh; position: relative; left: -2%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/branding-solutions"
+                      class="portfolio-items port-five w-inline-block"
+                      ><div
+                        data-w-id="d3bf4a85-c499-341a-0264-e1b7c356bd4e"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/6703709952dc4296b54cd465_portfolio-one-03.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Branding Solutions
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Freezing moments in time, illuminating perspectives,
+                          and telling stories through the lens.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex left-align trigger6">
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/website-designing"
+                      class="portfolio-items port-six w-inline-block"
+                      ><div
+                        data-w-id="8b46c8c8-27e6-b8ff-2753-862e2034b15c"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67285b907c6bc502a20304f5_portfolio-last-002.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Website Designing
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Preserving the magic and memories of weddings through
+                          captivating photography.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="history-text1 fade-in6"
+              style="width: 35%; height: 30vh; position: relative; left: 4%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex trigger7">
+            <div
+              class="history-text1 fade-in7"
+              style="width: 35%; height: 30vh; position: relative; left: -2%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/artistic-tactics"
+                      class="portfolio-items port-three w-inline-block"
+                      ><div
+                        data-w-id="dbba188a-c8af-7fe9-0847-b034c6c54d5c"
+                        style="
+                          background-image: url('https:cdn.prod.website-files.com/66d182cef23126623c1c94fe/6704bf566ff76b3cdd5bf82e_portfolio-one-004.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Artistic Tactics
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Revealing the breathtaking wonders of the natural
+                          world through the art of photography.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex left-align trigger8">
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/e-commerce-integration"
+                      class="portfolio-items port-four w-inline-block"
+                      ><div
+                        data-w-id="4086d3a1-2b18-e670-149a-62cbd9120498"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67037080125260b47d16fbe5_portfolio-one-05.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          E-Commerce Integration
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Immersing in the untamed beauty of nature, capturing
+                          wildlife's raw essence through the lens.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="history-text1 fade-in8"
+              style="width: 35%; height: 30vh; position: relative; left: 4%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex trigger9">
+            <div
+              class="history-text1 fade-in9"
+              style="width: 35%; height: 30vh; position: relative; left: -2%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/branding-solutions"
+                      class="portfolio-items port-five w-inline-block"
+                      ><div
+                        data-w-id="d3bf4a85-c499-341a-0264-e1b7c356bd4e"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/6703709952dc4296b54cd465_portfolio-one-03.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Branding Solutions
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Freezing moments in time, illuminating perspectives,
+                          and telling stories through the lens.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-layout-hflex portfolio-item-flex left-align trigger10">
+            <div class="portfolio-item-block">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="w-dyn-item">
+                    <a
+                      href="/portfolio/website-designing"
+                      class="portfolio-items port-six w-inline-block"
+                      ><div
+                        data-w-id="8b46c8c8-27e6-b8ff-2753-862e2034b15c"
+                        style="
+                          background-image: url('https://cdn.prod.website-files.com/66d182cef23126623c1c94fe/67285b907c6bc502a20304f5_portfolio-last-002.webp');
+                          width: 0%;
+                          -webkit-transform: translate3d(0, 0, 0)
+                            scale3d(1.1, 1.1, 1) rotatex(0) rotatey(0)
+                            rotatez(0) skew(0, 0);
+                          -moz-transform: translate3d(0, 0);
+                          -ms-transform: translate3d(0, 0);
+                          transform: translate3d(0, 0);
+                        "
+                        class="portfolio-image-box-two"
+                      ></div>
+                      <div class="w-layout-hflex portfolio-content-box">
+                        <div class="heading-five-jakarta dark-text">
+                          Website Designing
+                        </div>
+                        <div
+                          class="small-heading padding-top-twenty padding-bottom-ten"
+                        >
+                          Preserving the magic and memories of weddings through
+                          captivating photography.
+                        </div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="history-text1 fade-in10"
+              style="width: 35%; height: 30vh; position: relative; left: 4%"
+            >
+              <div
+                class="history-title1"
+                style="
+                  width: 100%;
+                  height: 20%;
+                  font-size: 30px;
+                  font-weight: 700;
+                "
+              >
+                The Church is Built
+              </div>
+              <div class="history-paragraph1">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
       data-w-id="3f3991e8-783e-794b-8fce-3cb4ed7cf454"
       class="footer-section home-two-footer-bg"
     >
@@ -711,10 +1227,12 @@
               >
             </div>
             <div class="w-layout-vflex footer-menu-box">
-              <div class="footer-menu-title" style="margin-bottom: -10px;">Contact</div>
-              <p class="footer-menu-link padding-bottom-twenty">
-                <div class="footer-links">25 Main Avenue,</div>
-                <div class="footer-links">Bulimba QLD 4171</div>
+              <div class="footer-menu-title" style="margin-bottom: -10px">
+                Contact
+              </div>
+              <p class="footer-menu-link padding-bottom-twenty"></p>
+              <div class="footer-links">25 Main Avenue,</div>
+              <div class="footer-links">Bulimba QLD 4171</div>
               </p>
               <a
                 href="tel:8884567890"
@@ -722,11 +1240,11 @@
                 >(07) 3399 2386</a
               >
               <a
-              href="mailto:bulimba@bne.catholic.net.au"
-              class="footer-menu-link padding-bottom-twenty"
-              style="color: var(--body-dark);"
-              >bulimba@bne.catholic.net.au</a
-            >
+                href="mailto:bulimba@bne.catholic.net.au"
+                class="footer-menu-link padding-bottom-twenty"
+                style="color: var(--body-dark)"
+                >bulimba@bne.catholic.net.au</a
+              >
             </div>
           </div>
         </div>
@@ -741,11 +1259,21 @@
                 href="https://webflow.com/templates/designers/radiant-themes"
                 target="_blank"
                 class="text-link"
-                ><img style="width: 30%; height: 10%; left: -1.5%; position: relative;" src="assets/img-assets2/black text.png"></a
-              >
+                ><img
+                  style="
+                    width: 30%;
+                    height: 10%;
+                    left: -1.5%;
+                    position: relative;
+                  "
+                  src="assets/img-assets2/black text.png"
+              /></a>
             </div>
           </div>
-          <div class="w-layout-hflex footer-social-box" style="flex-direction: row;">
+          <div
+            class="w-layout-hflex footer-social-box"
+            style="flex-direction: row"
+          >
             <a
               href="assets-4/safeguarding-policy.pdf"
               class="footer-social-link"
@@ -761,13 +1289,15 @@
         </div>
       </div>
     </section>
-                          
-                          
-                          
-                          
-                          
-                          <script
-                          src="scripts2/js/scripts3.js"
-                          type="text/javascript" crossorigin="anonymous"></script><script
-                          src="assets-6/js/webflow.b6ed66143.js"
-                          type="text/javascript"></script></body></html>
+
+    <script
+      src="scripts2/js/scripts3.js"
+      type="text/javascript"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="assets-6/js/webflow.b6ed66143.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

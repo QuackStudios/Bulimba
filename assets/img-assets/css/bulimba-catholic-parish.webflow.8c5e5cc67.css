@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
   overflow: hidden; /* Hide the native scrollbar */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 article,
@@ -143,6 +144,7 @@ button,
 html input[type='button'],
 input[type='reset'] {
   -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
 }
 
@@ -174,6 +176,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 input[type='search'] {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type='search']::-webkit-search-cancel-button,
@@ -214,7 +217,6 @@ th {
 
 [class^='w-icon-'],
 [class*=' w-icon-'] {
-  speak: none;
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
@@ -316,6 +318,7 @@ html.w-mod-touch * {
 
 input.w-button {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 html[data-w-dynpage] [data-w-cloak] {
@@ -536,6 +539,7 @@ button,
 [type='reset'] {
   cursor: pointer;
   -webkit-appearance: button;
+  appearance: button;
   border: 0;
 }
 
@@ -566,7 +570,6 @@ label {
 .w-input,
 .w-select {
   color: #333;
-  vertical-align: middle;
   background-color: #fff;
   border: 1px solid #ccc;
   width: 100%;
@@ -1268,7 +1271,7 @@ textarea.w-select {
   text-align: center;
   clear: both;
   -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
+  color: #0000;
   background: #ddd;
   height: 300px;
   position: relative;
@@ -1299,7 +1302,6 @@ textarea.w-select {
   z-index: 2;
   text-align: center;
   -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
   height: 40px;
   margin: auto;
   padding-top: 10px;
@@ -1364,7 +1366,7 @@ textarea.w-select {
   cursor: pointer;
   color: #fff;
   -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
+  color: #0000;
   -webkit-user-select: none;
   user-select: none;
   width: 80px;
@@ -1513,6 +1515,7 @@ textarea.w-select {
   opacity: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   background: #000000e6;
   outline: 0;
@@ -1525,6 +1528,7 @@ textarea.w-select {
   position: fixed;
   inset: 0;
   -webkit-transform: translate(0);
+  transform: translate(0);
 }
 
 .w-lightbox-backdrop,
@@ -1660,6 +1664,7 @@ textarea.w-select {
   padding: 2vh 1vh;
   display: inline-block;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .w-lightbox-active {
@@ -2011,7 +2016,7 @@ textarea.w-select {
   float: right;
   cursor: pointer;
   -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
+  color: #0000;
   -webkit-user-select: none;
   user-select: none;
   padding: 18px;
@@ -2177,7 +2182,7 @@ textarea.w-select {
 :root {
   --body-dark: #5d5d5d;
   --black: #232323;
-  --orange: #ff713b;
+  --orange: rgb(40, 81, 176);
   --white: white;
   --body-light: #d2d2d2;
   --light-orange: #f6f3ee;
@@ -5792,7 +5797,7 @@ blockquote {
 
 .line-overlay {
   background-color: #ffffffa6;
-  height: 70px;
+  height: 63px;
 }
 
 .button-text-flip {
@@ -6024,7 +6029,7 @@ blockquote {
 }
 
 .slide-item-image {
-  width: 200%;
+  width: 150%;
   max-width: none;
   height: 100%;
   position: absolute;
@@ -6122,7 +6127,7 @@ blockquote {
 }
 
 .trusting-agency-text-section {
-  background-color: #f6f3ee;
+  background-color: transparent;
   border-top: 1px solid #0c0c0c33;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -7086,7 +7091,7 @@ blockquote {
 }
 
 .line-divider-orange {
-  background-color: var(--orange);
+  background-color: rgb(40, 81, 176);
   width: 100%;
   height: 1px;
   position: absolute;
@@ -15984,4 +15989,9 @@ blockquote {
 /* Dimmed Background */
 body.dimmed {
   pointer-events: none; /* Prevent interaction with the page */
+}
+
+.logo-hero {
+  position: relative;
+  left: -13%;
 }

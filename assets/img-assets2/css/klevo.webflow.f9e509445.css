@@ -2177,7 +2177,7 @@ textarea.w-select {
 :root {
   --body-dark: #5d5d5d;
   --black: #232323;
-  --orange: #ff713b;
+  --orange: #2851b0;
   --white: white;
   --body-light: #d2d2d2;
   --light-orange: #f6f3ee;
@@ -6013,7 +6013,7 @@ blockquote {
 }
 
 .slide-item-image {
-  width: 200%;
+  width: 150%;
   max-width: none;
   height: 100%;
   position: absolute;

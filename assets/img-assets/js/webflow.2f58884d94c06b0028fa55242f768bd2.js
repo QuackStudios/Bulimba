@@ -109081,7 +109081,7 @@ Arguments: ` +
                         selector: ".slide-item-image",
                         selectorGuids: ["71dca672-1d76-36b0-9cd2-fa0335fe1a37"],
                       },
-                      xValue: 50,
+                      xValue: 15,
                       xUnit: "%",
                       yUnit: "PX",
                       zUnit: "PX",

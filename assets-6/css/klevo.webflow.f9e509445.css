@@ -10846,7 +10846,7 @@ blockquote {
 
 .megamenu-nav {
   grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-row-gap: 0px;
   flex-flow: column;
   flex: 0 50%;
   display: flex;
@@ -11448,7 +11448,7 @@ blockquote {
 
 @media screen and (min-width: 1920px) {
   .heading-two-fraunces.white-text.nav-links {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 80px;
   }
 

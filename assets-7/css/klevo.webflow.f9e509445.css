@@ -4759,7 +4759,7 @@ blockquote {
 }
 
 .footer-menu-link:hover {
-  color: #0c0c0c;
+  color: white;
 }
 
 .footer-menu-link.padding-bottom-twenty {
@@ -4767,7 +4767,7 @@ blockquote {
 }
 
 .footer-menu-link.padding-bottom-twenty:hover {
-  color: #0c0c0c;
+  color: white;
 }
 
 .footer-menu-link.padding-bottom-twenty.body-light.home-three-footer-link:hover {

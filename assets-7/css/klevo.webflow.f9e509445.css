@@ -15879,3 +15879,240 @@ blockquote {
   position: relative;
   transform: translate(1vw, 1vh);
 }
+
+
+.baptism-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.baptism-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.baptism-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.baptism-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .baptism-content-flex {
+    flex-direction: column;
+  }
+
+  .baptism-image-side,
+  .baptism-text-side {
+    max-width: 100%;
+  }
+}
+.confirmation-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.confirmation-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.confirmation-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .confirmation-content-flex {
+    flex-direction: column;
+  }
+
+  .confirmation-image-side,
+  .confirmation-text-side {
+    max-width: 100%;
+  }
+}
+.communion-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.communion-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.communion-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.communion-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .communion-content-flex {
+    flex-direction: column;
+  }
+
+  .communion-image-side,
+  .communion-text-side {
+    max-width: 100%;
+  }
+}
+.holyorders-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.holyorders-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.holyorders-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.holyorders-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .holyorders-content-flex {
+    flex-direction: column;
+  }
+
+  .holyorders-image-side,
+  .holyorders-text-side {
+    max-width: 100%;
+  }
+}
+
+
+
+
+.anointing-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.anointing-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.anointing-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.anointing-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .anointing-content-flex {
+    flex-direction: column;
+  }
+
+  .anointing-image-side,
+  .anointing-text-side {
+    max-width: 100%;
+  }
+}
+.matrimony-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.matrimony-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.matrimony-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.matrimony-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .matrimony-content-flex {
+    flex-direction: column;
+  }
+
+  .matrimony-image-side,
+  .matrimony-text-side {
+    max-width: 100%;
+  }
+}
+.penance-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.penance-image-side {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+.penance-image-side img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.penance-text-side {
+  flex: 2 1 500px;
+}
+
+@media (max-width: 768px) {
+  .penance-content-flex {
+    flex-direction: column;
+  }
+
+  .penance-image-side,
+  .penance-text-side {
+    max-width: 100%;
+  }
+}

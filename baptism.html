@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Nov 25 2024 05:17:37 GMT+0000 (Coordinated Universal Time) -->
 <html
-  data-wf-domain="klevo.webflow.io"
+  data-wf-domain="bulimbaparish.com.au"
   data-wf-page="66d5a84ffc981bd7f74a8d25"
   data-wf-site="668cb1bb08d71a7f19d43089"
   lang="en"
@@ -702,9 +702,77 @@
       <div class="w-layout-blockcontainer container-box blog-details-container w-container">
         <div class="blog-details">
           <div class="baptism-content-flex">
-            <div class="baptism-image-side">
-              <img src="assets/images/ministries.png" alt="Music during a baptismal celebration at Saints Peter and Paul Church" />
-            </div>
+           <div class="baptism-image-side">
+  <img id="baptism-slide1" class="slide show" src="assets/images/STSPP_Website_Baptism_ (1).jpeg" alt="Music during a baptismal celebration at Saints Peter and Paul Church" />
+  <img id="baptism-slide2" class="slide" src="assets/images/STSPP_Website_Baptism_ (1).jpeg" alt="" />
+</div>
+
+<script>
+  const baptismImages = [
+    'assets/images/STSPP_Website_Baptism_ (1).jpeg',
+    'assets/images/STSPP_Website_Baptism_ (2).jpeg'
+  ];
+
+  let baptismIndex = 0;
+  let baptismShowingSlide1 = true;
+  const bSlide1 = document.getElementById('baptism-slide1');
+  const bSlide2 = document.getElementById('baptism-slide2');
+
+  function showNextImage() {
+    // Calculate next index
+    baptismIndex = (baptismIndex + 1) % baptismImages.length;
+    const nextImageSrc = baptismImages[baptismIndex];
+
+    // Preload the next image
+    const img = new Image();
+    img.src = nextImageSrc;
+    img.onload = () => {
+      // Only after image has loaded do we crossfade
+      if (baptismShowingSlide1) {
+        bSlide2.src = nextImageSrc;
+        bSlide2.classList.add('show');
+        bSlide1.classList.remove('show');
+      } else {
+        bSlide1.src = nextImageSrc;
+        bSlide1.classList.add('show');
+        bSlide2.classList.remove('show');
+      }
+      baptismShowingSlide1 = !baptismShowingSlide1;
+
+      // Schedule the next change AFTER the transition
+      setTimeout(showNextImage, 5000);
+    };
+  }
+
+  // Start slideshow after initial delay
+  setTimeout(showNextImage, 5000);
+</script>
+
+<style>
+.baptism-image-side {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.baptism-image-side img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.baptism-image-side img.show {
+  opacity: 1;
+  z-index: 1;
+}
+</style>
+
             <div class="baptism-text-side">
               <blockquote>
                 Baptism is the first Sacrament of Initiation into the Christian Church. The word means to plunge into

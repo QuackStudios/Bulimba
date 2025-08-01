@@ -4012,6 +4012,7 @@ blockquote {
   border-bottom: 1px solid #0000004d;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 2%;
 }
 
 .tab-image-height-auto {
@@ -5203,7 +5204,16 @@ blockquote {
   background-size: cover;
   position: relative;
 }
-
+.home-one-hero-section.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  z-index: 0;
+}
 .home-one-hero-section.hero-bg.home-one-hero-content {
   flex-flow: column;
   justify-content: flex-start;

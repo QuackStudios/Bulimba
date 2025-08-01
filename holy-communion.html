@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Nov 25 2024 05:17:37 GMT+0000 (Coordinated Universal Time) -->
 <html
-  data-wf-domain="klevo.webflow.io"
+  data-wf-domain="bulimbaparish.com.au"
   data-wf-page="66d5a84ffc981bd7f74a8d25"
   data-wf-site="668cb1bb08d71a7f19d43089"
   lang="en"
@@ -706,8 +706,76 @@
         <div class="blog-details">
           <div class="communion-content-flex">
             <div class="communion-image-side">
-              <img src="assets/images/holy-communion.png" alt="Holy Communion at Saints Peter and Paul Church" />
-            </div>
+            <img id="communion-slide1" class="slide show" src="assets/images/holy-communion.png" alt="Holy Communion at Saints Peter and Paul Church" />
+            <img id="communion-slide2" class="slide" src="assets/images/holy-communion.png" alt="" />
+          </div>
+
+<script>
+  const communionImages = [
+    'assets/images/holy-communion.png',
+    'assets/images/STSPP_Website_Communion_.jpeg',
+    'assets/images/STSPP_Website_Communion_ (1).jpeg',
+    'assets/images/STSPP_Website_Communion_5-mi.jpeg'
+
+  ];
+
+  let communionIndex = 0;
+  let communionShowingSlide1 = true;
+  const comSlide1 = document.getElementById('communion-slide1');
+  const comSlide2 = document.getElementById('communion-slide2');
+
+  function showNextCommunionImage() {
+    communionIndex = (communionIndex + 1) % communionImages.length;
+    const nextImageSrc = communionImages[communionIndex];
+
+    const img = new Image();
+    img.src = nextImageSrc;
+    img.onload = () => {
+      if (communionShowingSlide1) {
+        comSlide2.src = nextImageSrc;
+        comSlide2.classList.add('show');
+        comSlide1.classList.remove('show');
+      } else {
+        comSlide1.src = nextImageSrc;
+        comSlide1.classList.add('show');
+        comSlide2.classList.remove('show');
+      }
+
+      communionShowingSlide1 = !communionShowingSlide1;
+
+      setTimeout(showNextCommunionImage, 5000);
+    };
+  }
+
+  // Start slideshow after initial delay
+  setTimeout(showNextCommunionImage, 5000);
+</script>
+
+<style>
+.communion-image-side {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.communion-image-side img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.communion-image-side img.show {
+  opacity: 1;
+  z-index: 1;
+}
+</style>
+
             <div class="communion-text-side">
               <blockquote>
                 Holy Communion completes initiation into the family of Jesus, the Church. This is the Sacrament of

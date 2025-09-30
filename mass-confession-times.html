@@ -112,6 +112,13 @@
               src="assets/images/2.png"
               loading="lazy"
           /></a>
+                      <style>
+              @media (max-width: 600px) {
+              .logo-hero {
+                width: 100%;
+              }
+            }
+            </style>
         </div>
         <div class="header-button">
           <div
@@ -671,7 +678,7 @@
     </header>
     <section
       class="contact-one-form-section"
-      style="height: 90vh; padding-top: 5%;"
+      style="height: auto; padding-top: 5%; padding-bottom: 10vh;"
     >
       <div class="w-layout-blockcontainer container-box w-container">
         <div class="w-layout-hflex contact-content-block fade-in2" style="width: 100%">
@@ -694,8 +701,8 @@
                   style="margin-left: 4%; padding-left: 8%"
                   >
                   <div>5:30 PM (Saturday)</div>
-                  <div>8:00 AM</div>
-                  <div>5:30 PM</div>
+                  <div style="display: flex;">8:00 AM</div>
+                  <div style="display: flex;">5:30 PM</div>
                 </span>
               </div>
             </div>
@@ -709,7 +716,7 @@
               >
                 Wednesday:<br /><span
                   class="heading-five-fraunces"
-                  style="margin-left: 4%; padding-left: 5%"
+                  style="margin-left: 4%; padding-left: 5%; white-space: nowrap;"
                   >7:00 pm</span
                 >
               </div>
@@ -724,8 +731,8 @@
               >
                 Friday:<br /><span
                   class="heading-five-fraunces"
-                  style="margin-left: 4%; padding-left: 10.4%"
-                  >8:00 am
+                  style="margin-left: 4%; padding-left: 10.4%; display: flex; align-items: start; width: 100%; gap: 5%;"
+                  ><span>8:00 am</span>
                   <span style="text-transform: none !important"
                     >with Adoration and Benediction</span
                   >
@@ -742,9 +749,9 @@
               >
                 Saturday:<br />
                 <div style="margin-left: 4%; padding-left: 4.5%">
-                  <div class="heading-five-fraunces">9:00 am</div>
+                  <div class="heading-five-fraunces" style="align-items: start;">9:00 am</div>
                   <span
-                  class="heading-five-fraunces">9:30 am - 
+                  class="heading-five-fraunces" style="align-items: start;">9:30 am - 
                   <span style="text-transform: none !important"
                     >Sacrament of Confession</span
                   >
@@ -759,8 +766,18 @@
               Easter Mass times.
             </div>
           </div>
+          <style>
+            @media (max-width: 991px) {
+            .heading-five-fraunces {
+              display: flex;
+              flex-direction: column;
+            }
+              }
+            
+          </style>
         </div>
         <div
+        class="mobile-image-hide"
           style="
             width: 100%;
             display: flex;
@@ -779,6 +796,14 @@
             />
           </div>
         </div>
+        <style>
+          @media (max-width: 991px) {
+            .mobile-image-hide {
+              opacity: 0 !important;
+              display: none !important;
+            }
+          }
+        </style>
       </div>
     </section>
     <section
@@ -791,8 +816,15 @@
       >
         <div
           class="w-layout-hflex footer-heading-block"
-          style="flex-direction: row"
+          style="flex-direction: row;"
         >
+        <style>
+          @media (max-width: 485px) {
+            .w-layout-hflex.footer-heading-block {
+              flex-direction: column !important;
+            }
+          }
+        </style>
           <div class="w-layout-hflex footer-title-text footer-text-width">
             <div class="heading-one-jakarta footer-title-one">
               Let’s Worship
@@ -893,7 +925,7 @@
               >Parish School</a
             >
           </div>
-          <div class="w-layout-vflex footer-menu-box">
+          <div class="w-layout-vflex footer-menu-box" style="width: 33% !important;">
             <div class="footer-menu-title" style="margin-bottom: -10px;">Contact</div>
             <p class="footer-menu-link padding-bottom-twenty">
               <div class="footer-links">25 Main Avenue,</div>
@@ -907,7 +939,7 @@
             <a
             href="mailto:bulimba@bne.catholic.net.au"
             class="footer-menu-link padding-bottom-twenty"
-            style="color: var(--body-dark);"
+            style="color: var(--body-dark); word-wrap: break-word; width: 100%; "
             >bulimba@bne.catholic.net.au</a
           >
           </div>
@@ -942,6 +974,14 @@
             >
           </div>
         </div>
+        <style>
+          @media (max-width: 600px) {
+            .w-layout-hflex.footer-copy-write-block {
+              flex-direction: column !important;
+            }
+            
+          }
+        </style>
       </div>
     </section>
     <script

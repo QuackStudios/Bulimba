@@ -13435,7 +13435,7 @@ blockquote {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     grid-template-rows: auto auto;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
   }
 
   .blog-details-hero-meta {
@@ -13451,9 +13451,6 @@ blockquote {
     height: auto;
   }
 
-  .blog-details {
-    padding-top: 70px;
-  }
 
   .blog-details-author-title {
     flex-flow: wrap;
@@ -15922,4 +15919,19 @@ blockquote {
 .logo-hero {
   position: relative;
   transform: translate(1vw, 1vh);
+}
+
+@media (max-width: 600px) {
+  .blog-details-hero-meta.padding-top-thirty {
+    padding-top: 0px !important;
+  }
+  .blog-details-hero-line {
+    margin: 0px !important;
+  }
+  .blog-details-hero {
+    grid-row-gap: 0px !important;
+  }
+  .confirmation-text-side {
+    flex: 2 1;
+  }
 }

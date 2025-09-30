@@ -13433,7 +13433,7 @@ blockquote {
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     grid-template-rows: auto auto;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
   }
 
   .blog-details-hero-meta {
@@ -13449,9 +13449,6 @@ blockquote {
     height: auto;
   }
 
-  .blog-details {
-    padding-top: 70px;
-  }
 
   .blog-details-author-title {
     flex-flow: wrap;
@@ -15970,6 +15967,7 @@ blockquote {
   .communion-image-side,
   .communion-text-side {
     max-width: 100%;
+    flex: 2 1 !important;
   }
 }
 .holyorders-content-flex {
@@ -16003,6 +16001,7 @@ blockquote {
   .holyorders-image-side,
   .holyorders-text-side {
     max-width: 100%;
+    flex: 2 1 !important;
   }
 }
 
@@ -16040,6 +16039,7 @@ blockquote {
   .anointing-image-side,
   .anointing-text-side {
     max-width: 100%;
+    flex: 2 1 !important;
   }
 }
 .matrimony-content-flex {
@@ -16073,6 +16073,7 @@ blockquote {
   .matrimony-image-side,
   .matrimony-text-side {
     max-width: 100%;
+     flex: 2 1 !important;
   }
 }
 .penance-content-flex {
@@ -16106,5 +16107,22 @@ blockquote {
   .penance-image-side,
   .penance-text-side {
     max-width: 100%;
+    flex: 2 1 !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .blog-details-hero-meta.padding-top-thirty {
+    padding-top: 0px !important;
+  }
+  .blog-details-hero-line {
+    margin: 0px !important;
+  }
+  .blog-details-hero {
+    grid-row-gap: 0px !important;
+  }
+  .confirmation-text-side {
+    flex: 2 1;
   }
 }

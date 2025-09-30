@@ -933,6 +933,7 @@
               })
             })
           </script>
+          
           <div
             class="w-layout-vflex contact-touch-us-text-content contact-three-touch-text"
           >
@@ -1133,21 +1134,36 @@
       src="assets-4/js/webflow.b6ed66143.js"
       type="text/javascript"
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var acc = document.getElementsByClassName("accordion");
-        for (var i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          });
-        }
-      });
-    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var acc = document.getElementsByClassName("accordion");
+
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+
+      // Toggle panel display
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+
+      // Force page to recalc scrollable height
+      setTimeout(function () {
+        document.body.style.overflow = "hidden";   // temporarily block scroll
+        document.body.offsetHeight;               // force reflow
+        document.body.style.overflow = "auto";   // restore scroll
+
+        // Log the new page height
+        console.log("Page height recalculated:", document.body.scrollHeight);
+      }, 50);
+    });
+  }
+});
+</script>
+
+
   </body>
 </html>

@@ -11489,10 +11489,6 @@ blockquote {
     padding-top: 60px;
   }
 
-  .scroll-block,
-  .home-one-hero-scroll-block {
-    display: flex;
-  }
 
   .home-one-hero-scroll-block.border-left-dark.hero-right-main-box {
     position: relative;
@@ -11511,11 +11507,7 @@ blockquote {
     overflow: hidden;
   }
 
-  .hero-scroll-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+
 
   .hero-social-block {
     justify-content: flex-start;
@@ -15996,4 +15988,17 @@ body.dimmed {
   .confirmation-text-side {
     flex: 2 1;
   }
+}
+
+@media (min-width: 1300px) {
+  .hero-scroll-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+    .scroll-block,
+  .home-one-hero-scroll-block {
+    display: flex;
+  }
+
 }

@@ -5433,9 +5433,6 @@ blockquote {
   position: relative;
 }
 
-.campaigns-box-item.border-bottom.border-top.border-right.border-right-desk-none {
-  border-right-width: 0;
-}
 
 .heaidng-before-line {
   justify-content: center;
@@ -5779,6 +5776,10 @@ blockquote {
 
 .border-bottom {
   border-bottom: 1px solid #0c0c0c33;
+}
+
+.border-left {
+  border-left: 1px solid #0c0c0c33;
 }
 
 .home-one-hero-video-text-block {
@@ -9933,9 +9934,7 @@ blockquote {
   left: -13px;
 }
 
-.box-plus-icon-two.icon-none-left {
-  display: none;
-}
+
 
 .about-one-heading-inside-flower {
   grid-column-gap: 25px;
@@ -12291,10 +12290,7 @@ blockquote {
     align-items: flex-start;
   }
 
-  .campaigns-box-item.border-right.border-bottom.border-right-response-none,
-  .campaigns-box-item.border-top.border-right.border-bottom.border-right-responsive-none {
-    border-right-width: 0;
-  }
+
 
   .campaigns-box-item.border-bottom.border-top.border-right.border-right-desk-none.border-top-responsive-none.border-box-responsive {
     border-right-width: 1px;
@@ -13684,6 +13680,9 @@ blockquote {
     font-size: 16px;
     line-height: 26px;
   }
+  .border-left-mobile {
+   border-left: 1px solid #0c0c0c33;
+  }
 
   .heading-two-jakarta {
     font-size: 25px;
@@ -14006,12 +14005,6 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .campaigns-box-item.border-right.border-bottom.border-right-response-none,
-  .campaigns-box-item.border-right.border-bottom.border-box-responsive,
-  .campaigns-box-item.border-top.border-right.border-bottom.border-right-responsive-none {
-    border-right-width: 0;
-  }
-
   .campaigns-box-item.border-bottom.border-top.border-right.border-right-desk-none {
     border-right-width: 1px;
   }
@@ -14020,15 +14013,7 @@ blockquote {
     border-top-width: 0;
   }
 
-  .campaigns-box-item.border-bottom.border-top.border-right.border-right-desk-none.border-top-responsive-none.border-box-responsive {
-    border-bottom-width: 1px;
-    border-right-width: 0;
-  }
 
-  .campaigns-box-item.border-bottom.border-top.border-right.border-box-responsive {
-    border-bottom-width: 0;
-    border-right-width: 0;
-  }
 
   .digital-content-paragraph-link {
     padding-right: 30px;

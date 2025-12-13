@@ -792,15 +792,22 @@
           >
             <img
               src="christmas-mass-times.png"
-              style="width: 100%; height: 100%"
+              class="mobile-image-resize"
+              style="width: 120%; height: 110%; max-width: none;"
             />
           </div>
         </div>
         <style>
           @media (max-width: 991px) {
             .mobile-image-hide {
-              opacity: 0 !important;
-              display: none !important;
+              padding-left: 0% !important;
+              padding-top: 13% !important;
+            }
+          }
+          @media (max-width: 991px) {
+            .mobile-image-resize {
+              width: 100% !important;
+              height: 100% !important;
             }
           }
         </style>

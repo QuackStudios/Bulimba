@@ -63,7 +63,7 @@ function initLenis(Lenis) {
   const lenis = new Lenis({
     // PREVIOUSLY: lerp: 0.1
     // NOW: A smaller value for a longer, smoother stop.
-    lerp: 0.02, // <-- CHANGE THIS VALUE
+    lerp: 0.97, // <-- CHANGE THIS VALUE
 
     // Keep these settings
     smoothWheel: true,

@@ -1309,5 +1309,91 @@
       ></script>
     </div>
       
+
+    <style>
+      .hw-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.hw-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hw-popup-inner {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.hw-popup.active .hw-popup-inner {
+  transform: scale(1);
+}
+
+.hw-popup img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.hw-popup-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+    </style>
+
+<div id="hw-popup" class="hw-popup">
+  <div class="hw-popup-inner">
+    <button class="hw-popup-close">&times;</button>
+    <img src="/Bulimba-Easter-Mass-Times-Imag.jpeg" alt="Holy Week Mass Times">
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("hw-popup");
+  const inner = popup.querySelector(".hw-popup-inner");
+  const close = popup.querySelector(".hw-popup-close");
+
+  // Show popup (slight delay feels smoother)
+  setTimeout(() => {
+    popup.classList.add("active");
+  }, 400);
+
+  // Close button
+  close.addEventListener("click", () => {
+    popup.classList.remove("active");
+  });
+
+  // Click outside image = close
+  popup.addEventListener("click", (e) => {
+    if (!inner.contains(e.target)) {
+      popup.classList.remove("active");
+    }
+  });
+});
+</script>
+
   </body>
 </html>
